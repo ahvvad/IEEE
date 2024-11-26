@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '/widgits/app_bar.dart';
 
 class Taskone extends StatelessWidget {
   const Taskone({super.key});
@@ -6,7 +7,7 @@ class Taskone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _appBar(),
+      appBar: appBar(barTitle: 'Task one'),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -76,20 +77,7 @@ class Taskone extends StatelessWidget {
     );
   }
 
-  AppBar _appBar() {
-    return AppBar(
-      backgroundColor: Colors.teal,
-      centerTitle: true,
-      title: const Text(
-        'Task -> 1',
-        style: TextStyle(
-          fontSize: 18,
-          fontWeight: FontWeight.w600,
-          color: Colors.white,
-        ),
-      ),
-    );
-  }
+  
 
   places(String title, String path) {
     return Container(
