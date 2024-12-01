@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../widgits_three/custom_form_field.dart';
 import '../widgits_three/custom_bottons.dart';
 import '../constants.dart';
+import 'login.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});
@@ -98,6 +99,12 @@ class SignUp extends StatelessWidget {
                   GestureDetector(
                     onTap: () {
                       // Get.to -> Login()
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Login(),
+                        ),
+                      );
                     },
                     child: const Text(
                       'Login',
