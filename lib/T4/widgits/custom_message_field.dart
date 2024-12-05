@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';
@@ -12,6 +14,17 @@ Row messageField() {
           decoration: InputDecoration(
             filled: true,
             fillColor: Colors.grey[800],
+            suffixIcon: Transform.rotate(
+              angle: pi / -3.9,
+              child: GestureDetector(
+                  onTap: () {
+                    // Link icon method
+                  },
+                  child: const Icon(
+                    Icons.link_outlined,
+                    color: Colors.white,
+                  )),
+            ),
             hintText: 'Message..',
             hintStyle: TextStyle(color: Colors.grey.shade500),
             border: OutlineInputBorder(
