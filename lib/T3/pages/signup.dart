@@ -1,9 +1,8 @@
-// ignore_for_file: unused_import
-
 import 'package:flutter/material.dart';
+import '../../T4/task_four.dart';
 import '../widgits_three/custom_form_field.dart';
 import '../widgits_three/custom_bottons.dart';
-import '../constants.dart';
+import '../../constants.dart';
 import 'login.dart';
 
 class SignUp extends StatelessWidget {
@@ -34,7 +33,7 @@ class SignUp extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              mainField(
+              MainField(
                 title: 'Username',
                 icon: Icon(
                   Icons.person,
@@ -42,7 +41,7 @@ class SignUp extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              mainField(
+              MainField(
                 title: 'Email',
                 icon: Icon(
                   Icons.person,
@@ -50,7 +49,7 @@ class SignUp extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              mainField(
+              MainField(
                 title: 'Password',
                 icon: Icon(
                   Icons.password,
@@ -58,7 +57,7 @@ class SignUp extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 20),
-              mainField(
+              MainField(
                 title: 'Confirm Password',
                 icon: Icon(
                   Icons.password,
@@ -70,14 +69,20 @@ class SignUp extends StatelessWidget {
                 text: 'Sign up',
                 onTap: () {
                   // SignUp metheds
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const TaskFour(),
+                    ),
+                  );
                 },
                 width: double.infinity,
               ),
               const SizedBox(height: 5),
-              Padding(
-                padding: const EdgeInsets.only(top: 15.0),
+              const Padding(
+                padding: EdgeInsets.only(top: 15.0),
                 child: Divider(
-                  color: kMainColor.shade100,
+                  color: kThirdColor,
                   thickness: 0.99,
                 ),
               ),
@@ -87,6 +92,12 @@ class SignUp extends StatelessWidget {
                 text: 'Sign in with Google',
                 onTap: () {
                   // Google sign in methods
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const TaskFour(),
+                    ),
+                  );
                 },
                 width: double.infinity,
               ),

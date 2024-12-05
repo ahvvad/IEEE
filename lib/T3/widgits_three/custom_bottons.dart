@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../constants.dart';
+import '../../constants.dart';
 
 class MainBotton extends StatelessWidget {
   const MainBotton({
@@ -70,9 +70,9 @@ class LinedBotton extends StatelessWidget {
           child: Center(
             child: Text(
               text,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 18,
-                color: kMainColor.shade300,
+                color: kThirdColor,
                 fontWeight: FontWeight.w600,
               ),
               textAlign: TextAlign.left,

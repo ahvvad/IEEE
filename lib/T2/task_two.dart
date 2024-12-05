@@ -1,8 +1,6 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
-import '/task2/widgit_two.dart';
 import '/widgits/app_bar.dart';
+import 'widgit_two.dart';
 
 class TaskTwo extends StatelessWidget {
   const TaskTwo({super.key});

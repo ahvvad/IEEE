@@ -1,11 +1,9 @@
-// ignore_for_file: camel_case_types
-
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../../constants.dart';
 
-class mainField extends StatelessWidget {
-  const mainField({
+class MainField extends StatelessWidget {
+  const MainField({
     super.key,
     required this.title,
     required this.icon,
@@ -19,7 +17,7 @@ class mainField extends StatelessWidget {
     return TextFormField(
       decoration: InputDecoration(
         filled: true,
-        fillColor: Colors.purple.shade50,
+        fillColor: kSecondColor,
         prefixIcon: icon,
         hintText: title,
         hintStyle: TextStyle(color: kTextColor),
